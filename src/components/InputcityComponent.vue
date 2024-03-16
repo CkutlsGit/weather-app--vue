@@ -22,6 +22,7 @@
 import { ref } from 'vue'
 import { GetCityName } from "../../composables/CityAPI";
 import { SetCookie } from "../../composables/CookieStorage";
+import {eventBus} from "@/main";
 
 export default {
   setup(props, { emit }) {
@@ -39,7 +40,7 @@ export default {
 
         SetCookie('currentcity', correctCityId.value)
 
-        emit('getcity', correctCityId.value)
+        eventBus.emit('getcity', correctCityId.value)
       }
     }
 

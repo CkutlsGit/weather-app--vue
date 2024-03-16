@@ -24,6 +24,7 @@ import InputcityComponent from "@/components/InputcityComponent.vue";
 
 import { ref, onMounted } from 'vue'
 import { GetCookie } from "../../composables/CookieStorage";
+import {eventBus} from "@/main";
 
 export default {
   components: { InputcityComponent },
@@ -35,19 +36,17 @@ export default {
       if(GetCookie('currentcity')) {
         cityId.value = GetCookie('currentcity')
       }
+      eventBus.on('getcity', (cityUpdate) => {
+        cityId.value = cityUpdate
+        clickBtn.value = false
+      })
     })
 
     function closeInput() {
       clickBtn.value = false
     }
 
-    function getCityId(cityIdGet) {
-      cityId.value = cityIdGet
-      clickBtn.value = false
-      console.log(cityId.value)
-    }
-
-    return { clickBtn, cityId,closeInput, getCityId }
+    return { clickBtn, cityId,closeInput }
   }
 }
 </script>
