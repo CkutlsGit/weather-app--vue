@@ -2,16 +2,19 @@
   <main class="weather">
     <div class="weather__content">
       <weathercurrent-component :city="cityCurrent"></weathercurrent-component>
+      <weatherfuture-component :city="cityCurrent"></weatherfuture-component>
     </div>
   </main>
 </template>
 
 <script>
 import WeathercurrentComponent from "@/components/weather/WeathercurrentComponent.vue";
+import WeatherfutureComponent from "@/components/weather/WeatherfutureComponent.vue";
+
 import { ref, onMounted } from "vue";
 import { GetCookie } from "../../composables/CookieStorage";
 export default {
-  components: { WeathercurrentComponent },
+  components: {WeatherfutureComponent, WeathercurrentComponent },
   setup() {
     const cityCurrent = ref('')
 
