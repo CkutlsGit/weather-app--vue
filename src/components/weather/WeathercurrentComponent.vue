@@ -1,9 +1,13 @@
 <template>
-  <div class="weather-current text-white">
-    <h1>{{ cityCurrent }}</h1>
-    <h1>{{ WeatherinCity.summary }}</h1>
-    <h1>{{ WeatherinCity.temperature }}</h1>
-    <h1>{{ WeatherinCity.icon_num }}</h1>
+  <div class="weather-current flex justify-center">
+    <div class="weather-current__content bg-dark-blue text-center text-white my-16 w-2/12 rounded-md max-sm:w-6/12">
+      <h2 class="text-lg font-bold capitalize my-2">{{ cityCurrent }}</h2>
+      <div class="weather-current__info flex flex-col justify-center text-base font-medium">
+        <img class="mx-auto w-12 h-12" :src="imgSrc" :alt="WeatherinCity.summary">
+        <h2 class="mt-1">{{ WeatherinCity.summary }}</h2>
+        <h2 class="my-2">{{ WeatherinCity.temperature }} °C</h2>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -21,14 +25,17 @@ export default {
       temperature: '',
       icon_num: ''
     })
+    const imgSrc = ref('')
 
     watch(() => props.city, async newValue => {
       cityCurrent.value = newValue
       const response = await GetCurrentWeather(cityCurrent.value)
 
       WeatherinCity.summary = response.data.current.summary
-      WeatherinCity.temperature = response.data.current.temperature
+      WeatherinCity.temperature = response.data.current.temperature.toFixed(0)
       WeatherinCity.icon_num = response.data.current.icon_num
+
+      imgSrc.value = require('@/assets/img/icons-weather/' + WeatherinCity.icon_num + '.png')
     })
 
     onMounted(() => {
@@ -37,14 +44,14 @@ export default {
         const response = await GetCurrentWeather(cityUpdate)
 
         WeatherinCity.summary = response.data.current.summary
-        WeatherinCity.temperature = response.data.current.temperature
+        WeatherinCity.temperature = response.data.current.temperature.toFixed(0)
         WeatherinCity.icon_num = response.data.current.icon_num
+
+        imgSrc.value = require('@/assets/img/icons-weather/' + WeatherinCity.icon_num + '.png')
       })
     })
 
-
-
-    return { cityCurrent, WeatherinCity }
+    return { cityCurrent, WeatherinCity, imgSrc }
   }
 }
 </script>
