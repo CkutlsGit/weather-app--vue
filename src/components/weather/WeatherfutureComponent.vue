@@ -1,6 +1,8 @@
 <template>
   <div class="weather-future">
+    <div class="weather-future__content">
 
+    </div>
   </div>
 </template>
 
@@ -24,7 +26,6 @@ export default {
       for (let i = 0; i < 7; i++) {
         data.push({
           date: response.data.daily.data[i].day,
-          summary: response.data.daily.data[i].summary,
           temperature: response.data.daily.data[i].temperature.toFixed(0),
           icon_path: require('@/assets/img/icons-weather/' + response.data.daily.data[i].icon + '.png')
         })
@@ -44,7 +45,6 @@ export default {
         for (let i = 0; i < 7; i++) {
           data.push({
             date: response.data.daily.data[i].day,
-            summary: response.data.daily.data[i].summary,
             temperature: response.data.daily.data[i].temperature.toFixed(0),
             icon_path: require('@/assets/img/icons-weather/' + response.data.daily.data[i].icon + '.png')
           })
