@@ -12,11 +12,11 @@
         >
           Choose a Location
         </button>
-        <h1 @click="clickBtn = true" class="text-xl bg-cyan-900 px-2 py-2 rounded-md hover:text-gray-400 ease-in duration-300 max-sm:px-1 max-sm:py-1 max-sm:text-lg capitalize cursor-pointer">{{ cityId }}</h1>
+        <h1 v-else @click="clickBtn = true" class="text-xl bg-cyan-900 px-2 py-2 rounded-md hover:text-gray-400 ease-in duration-300 max-sm:px-1 max-sm:py-1 max-sm:text-lg capitalize cursor-pointer">{{ cityId }}</h1>
       </div>
     </div>
   </header>
-  <inputcity-component v-if="clickBtn" @closeinput="closeInput" @getcity="getCityId"></inputcity-component>
+  <inputcity-component v-if="clickBtn" @closeinput="closeInput"></inputcity-component>
 </template>
 
 <script>

@@ -1,8 +1,8 @@
 <template>
   <main class="weather">
     <div class="weather__content">
-      <weathercurrent-component v-if="cityCurrent" :city="cityCurrent"></weathercurrent-component>
-      <weatherfuture-component v-if="cityCurrent" :city="cityCurrent"></weatherfuture-component>
+      <weathercurrent-component :city="cityCurrent"></weathercurrent-component>
+      <weatherfuture-component :city="cityCurrent"></weatherfuture-component>
     </div>
   </main>
 </template>
@@ -13,6 +13,7 @@ import WeatherfutureComponent from "@/components/weather/WeatherfutureComponent.
 
 import { ref, onMounted } from "vue";
 import { GetCookie } from "../../composables/CookieStorage";
+import {eventBus} from "@/main";
 export default {
   components: {WeatherfutureComponent, WeathercurrentComponent },
   setup() {
@@ -22,6 +23,9 @@ export default {
       if (GetCookie('currentcity')) {
         cityCurrent.value = GetCookie('currentcity')
       }
+      eventBus.on('getcity', (cityUpdate) => {
+        cityCurrent.value = cityUpdate
+      })
     })
 
     return { cityCurrent }

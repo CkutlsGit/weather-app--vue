@@ -1,5 +1,5 @@
 <template>
-  <div class="weather-current flex justify-center">
+  <div v-if="city" class="weather-current flex justify-center">
     <div class="weather-current__content bg-dark-blue text-center text-white my-16 w-2/12 rounded-md max-sm:w-6/12">
       <h2 class="text-lg font-bold capitalize my-2">{{ cityCurrent }}</h2>
       <div class="weather-current__info flex flex-col justify-center text-base font-medium">
@@ -9,6 +9,7 @@
       </div>
     </div>
   </div>
+  <div v-else class="text-white text-2xl font-bold text-center w-96 bg-dark-blue rounded-md py-6 px-6 mx-auto my-24 max-sm:w-52 max-sm:text-xl">Choose a Location to receive data</div>
 </template>
 
 <script>

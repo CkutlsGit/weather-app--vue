@@ -1,5 +1,5 @@
 <template>
-  <div class="weather-future">
+  <div v-if="city" class="weather-future">
     <div class="weather-future__content flex justify-center w-8/12 bg-dark-blue rounded-md mx-auto py-2 max-xl:w-10/12 max-lg:w-4/12">
       <ul class="flex text-base text-white max-lg:flex-col max-sm:text-sm">
         <li v-for="weatherDate in WeatherDatesinCity" :key="weatherDate.id" class="mx-12 max-lg:my-2">
