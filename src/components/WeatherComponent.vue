@@ -1,8 +1,8 @@
 <template>
   <main class="weather">
     <div class="weather__content">
-      <weathercurrent-component :city="cityCurrent"></weathercurrent-component>
-      <weatherfuture-component :city="cityCurrent"></weatherfuture-component>
+      <weathercurrent-component v-if="cityCurrent" :city="cityCurrent"></weathercurrent-component>
+      <weatherfuture-component v-if="cityCurrent" :city="cityCurrent"></weatherfuture-component>
     </div>
   </main>
 </template>
