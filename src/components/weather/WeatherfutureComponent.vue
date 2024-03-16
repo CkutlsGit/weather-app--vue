@@ -25,7 +25,7 @@ export default {
         data.push({
           date: response.data.daily.data[i].day,
           summary: response.data.daily.data[i].summary,
-          temperature: response.data.daily.data[i].temperature,
+          temperature: response.data.daily.data[i].temperature.toFixed(0),
           icon_path: require('@/assets/img/icons-weather/' + response.data.daily.data[i].icon + '.png')
         })
       }
@@ -45,7 +45,7 @@ export default {
           data.push({
             date: response.data.daily.data[i].day,
             summary: response.data.daily.data[i].summary,
-            temperature: response.data.daily.data[i].temperature,
+            temperature: response.data.daily.data[i].temperature.toFixed(0),
             icon_path: require('@/assets/img/icons-weather/' + response.data.daily.data[i].icon + '.png')
           })
         }
