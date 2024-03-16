@@ -29,7 +29,7 @@ export default {
 
     watch(() => props.city, async newValue => {
       cityCurrent.value = newValue
-      const response = await GetCurrentWeather(cityCurrent.value)
+      const response = await GetCurrentWeather(newValue)
 
       WeatherinCity.summary = response.data.current.summary
       WeatherinCity.temperature = response.data.current.temperature.toFixed(0)
