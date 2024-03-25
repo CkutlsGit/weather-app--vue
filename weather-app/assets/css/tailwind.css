@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        background: #121212;
+    }
+}
+
+@layer utilities {
+    .bg-dark-blue {
+        background: #1D2837;
+    }
+}

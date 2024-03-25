@@ -5,85 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="901c933f-8933-46d7-be81-504421c20253" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/WeatherVue.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-app/app.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-app/nuxt.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-app/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-app/server/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-app/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.browserslistrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composables/CityAPI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composables/CookieStorage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composables/WeatherAPI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/MainPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/global.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/tailwind/input.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/tailwind/output.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/tailwind/tailwind.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/img/icons-weather/9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FooterComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InputcityComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WeatherComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/weather/WeathercurrentComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/weather/WeatherfutureComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/app.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-app/assets/css/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/weather-app/assets/css/tailwind.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="Vue Composition API Component" />
       </list>
     </option>
@@ -118,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "develop",
     "last_opened_file_path": "C:/files/projects/BankRofls",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -158,6 +82,7 @@
       <workItem from="1710584722352" duration="536000" />
       <workItem from="1711123237796" duration="214000" />
       <workItem from="1711350911676" duration="846000" />
+      <workItem from="1711351782762" duration="1589000" />
     </task>
     <servers />
   </component>
