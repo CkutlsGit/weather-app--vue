@@ -9,6 +9,7 @@
   import { GetCookie } from "assets/js/CookieStorage.js";
 
   const cityCurrent = ref('')
+
   const { $bus } = useNuxtApp()
 
   onMounted(() => {
@@ -26,5 +27,4 @@
 </script>
 
 <style scoped>
-
 </style>

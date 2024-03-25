@@ -23,6 +23,7 @@
 
   const cityName = ref('')
   const correctCityId = ref('')
+
   const { $bus } = useNuxtApp()
 
   function closeInput() {
@@ -41,5 +42,4 @@
 </script>
 
 <style scoped>
-
 </style>

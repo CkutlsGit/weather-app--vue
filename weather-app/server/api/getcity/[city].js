@@ -1,6 +1,7 @@
 import axios from "axios";
 
 export default defineEventHandler( async (event) => {
+
     const { city } = event.context.params
 
     const options = {

@@ -24,17 +24,18 @@
 
   const clickBtn = ref(false)
   const cityId = ref('')
+
   const { $bus } = useNuxtApp()
 
   onMounted(() => {
     if (GetCookie('currentCity')) {
       cityId.value = GetCookie('currentCity')
     }
+
     $bus.on('getCity', (cityUpdate) => {
       cityId.value = cityUpdate
       clickBtn.value = false
     })
-
     $bus.on('closeInput', () => {
       clickBtn.value = false
     })
@@ -43,5 +44,4 @@
 </script>
 
 <style scoped>
-
 </style>

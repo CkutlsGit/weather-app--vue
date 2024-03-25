@@ -13,7 +13,6 @@
 </template>
 
 <script setup>
-  const { $bus } = useNuxtApp()
   const cityCurrent = ref('')
   const WeatherinCity = reactive({
     summary: '',
@@ -22,11 +21,12 @@
   })
   const iconSrc = ref('')
 
+  const { $bus } = useNuxtApp()
+
   onMounted(() => {
     $bus.on('sendCityValue',async (cityValue) => {
       cityCurrent.value = cityValue
       const data = await $fetch(`/api/weather/getcurrentweather?city=${ cityValue }`)
-      console.log(data)
 
       WeatherinCity.summary = data.current.summary
       WeatherinCity.temperature = data.current.temperature.toFixed(0)
@@ -38,5 +38,4 @@
 </script>
 
 <style scoped>
-
 </style>

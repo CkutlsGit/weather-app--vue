@@ -20,27 +20,25 @@
 
   const { $bus } = useNuxtApp()
 
-onMounted(() => {
-  $bus.on('sendCityValue',async (cityValue) => {
-    cityCurrent.value = cityValue
-    const data = await $fetch(`/api/weather/getfutureweather?city=${ cityValue }`)
-    let datesArray = []
-    console.log(data)
+  onMounted(() => {
+    $bus.on('sendCityValue',async (cityValue) => {
+      cityCurrent.value = cityValue
+      const data = await $fetch(`/api/weather/getfutureweather?city=${ cityValue }`)
+      let datesArray = []
 
-    for (let i = 0; i < 7; i++) {
-      datesArray.push({
-        id: i,
-        date: data.daily.data[i].day,
-        temperature: data.daily.data[i].temperature.toFixed(0),
-        icon_path: `icons-weather/${data.daily.data[i].icon}.png`
-      })
-    }
+      for (let i = 0; i < 7; i++) {
+        datesArray.push({
+          id: i,
+          date: data.daily.data[i].day,
+          temperature: data.daily.data[i].temperature.toFixed(0),
+          icon_path: `icons-weather/${data.daily.data[i].icon}.png`
+        })
+      }
 
-    WeatherDatesinCity = Object.assign(WeatherDatesinCity, datesArray)
-  })
+      WeatherDatesinCity = Object.assign(WeatherDatesinCity, datesArray)
+    })
 })
 </script>
 
 <style scoped>
-
 </style>
