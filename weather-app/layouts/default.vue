@@ -15,9 +15,9 @@
 <script setup>
   const isLoaded = ref(false)
 
-  onMounted(() => {
+  setTimeout(() => {
     isLoaded.value = true
-  })
+  }, 900)
 
 </script>
 
