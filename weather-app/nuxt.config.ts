@@ -6,5 +6,9 @@ export default defineNuxtConfig({
   ],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
+  },
+  runtimeConfig: {
+    APIKey: process.env.RAPID_KEY,
+    APIHost: process.env.RAPID_HOST
   }
 })

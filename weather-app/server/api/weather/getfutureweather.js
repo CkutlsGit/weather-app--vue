@@ -3,6 +3,7 @@ import axios from "axios";
 export default defineEventHandler( async (event) => {
 
     const { city } = getQuery(event)
+    const { APIKey, APIHost } = useRuntimeConfig()
 
     const options = {
         method: 'GET',
@@ -13,8 +14,8 @@ export default defineEventHandler( async (event) => {
             units: 'metric'
         },
         headers: {
-            'X-RapidAPI-Key': '6a3322dd6amsh0b99e3eb3aa1b2cp1b4ea2jsnfd98a3c5d3b8',
-            'X-RapidAPI-Host': 'ai-weather-by-meteosource.p.rapidapi.com'
+            'X-RapidAPI-Key': `${ APIKey }`,
+            'X-RapidAPI-Host': `${ APIHost }`
         }
     }
 
