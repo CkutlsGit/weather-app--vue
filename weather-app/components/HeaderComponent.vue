@@ -16,6 +16,7 @@
       </div>
     </div>
   </header>
+  <inputcity-component v-if="clickBtn"></inputcity-component>
 </template>
 
 <script setup>
@@ -25,6 +26,11 @@
   const cityId = ref('')
   const { $bus } = useNuxtApp()
 
+  onMounted(() => {
+    $bus.on('closeInput', () => {
+      clickBtn.value = false
+    })
+  })
 
 </script>
 
