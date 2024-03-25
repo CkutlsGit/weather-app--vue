@@ -1,6 +1,7 @@
 <template>
   <div>
-    <weather-weathercurrent-component :city="cityCurrent"></weather-weathercurrent-component>
+    <weather-weathercurrent-component/>
+    <weather-weatherfuture-component/>
   </div>
 </template>
 
