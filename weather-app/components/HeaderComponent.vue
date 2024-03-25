@@ -19,10 +19,13 @@
 </template>
 
 <script setup>
+  import { GetCookie } from "assets/js/CookieStorage.js";
+
   const clickBtn = ref(false)
   const cityId = ref('')
+  const { $bus } = useNuxtApp()
 
-  
+
 </script>
 
 <style>
