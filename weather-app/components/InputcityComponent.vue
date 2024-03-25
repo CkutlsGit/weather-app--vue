@@ -34,7 +34,6 @@
       const data = await $fetch(`/api/getcity/${ cityName.value }`)
       correctCityId.value = data[0].place_id
 
-      console.log(correctCityId.value)
       SetCookie('currentCity', correctCityId.value)
       $bus.emit('getCity', correctCityId.value)
     }

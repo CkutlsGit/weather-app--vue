@@ -31,7 +31,6 @@
       cityId.value = GetCookie('currentCity')
     }
     $bus.on('getCity', (cityUpdate) => {
-      console.log(cityUpdate)
       cityId.value = cityUpdate
       clickBtn.value = false
     })
