@@ -19,6 +19,8 @@
 </template>
 
 <script setup>
+  import { SetCookie } from "assets/js/CookieStorage.js";
+
   const cityName = ref('')
   const correctCityId = ref('')
   const { $bus } = useNuxtApp()
@@ -27,9 +29,14 @@
     $bus.emit('closeInput')
   }
 
-  function clickSubmitBtn() {
+  async function clickSubmitBtn() {
     if (cityName.value !== '') {
-      //
+      const data = await $fetch(`/api/getcity/${ cityName.value }`)
+      correctCityId.value = data[0].place_id
+
+      console.log(correctCityId.value)
+      SetCookie('currentCity', correctCityId.value)
+      $bus.emit('getCity', correctCityId.value)
     }
   }
 </script>

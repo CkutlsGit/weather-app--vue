@@ -27,6 +27,15 @@
   const { $bus } = useNuxtApp()
 
   onMounted(() => {
+    if (GetCookie('currentCity')) {
+      cityId.value = GetCookie('currentCity')
+    }
+    $bus.on('getCity', (cityUpdate) => {
+      console.log(cityUpdate)
+      cityId.value = cityUpdate
+      clickBtn.value = false
+    })
+
     $bus.on('closeInput', () => {
       clickBtn.value = false
     })
